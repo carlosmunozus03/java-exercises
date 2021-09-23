@@ -37,13 +37,31 @@ public class ConsoleExercises {
         Scanner scanner5 = new Scanner(System.in);
         System.out.println("Now... enter a sentence");
         String sentence = scanner5.nextLine();
-        System.out.println("You third word is: --> \"" + sentence + "\" <--");
+        System.out.println("You sentence is: --> \"" + sentence + "\" <--");
 
         System.out.println("-----------------------------------------");
 
         //Calculate the perimeter and area of classrooms
+        System.out.println("Now... lets calculate the area and perimeter of a rectangle");
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter a length value");
-//....... continue tomorrow
+        double length = Double.parseDouble(sc1.nextLine());
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.println("Enter a width value");
+        double width = Double.parseDouble(sc2.nextLine());
+
+        System.out.println("The length is: --> \"" + length + "\" <--");
+        System.out.println("The width is: --> \"" + width + "\" <--");
+
+        //Area and perimeter
+        double area = length * width;
+        double perimeter = 2 * area + 2 * width;
+
+        System.out.println("-----------------------------------------");
+
+        System.out.println("The area of the rectangle is: --> \"" + area + "\" <--");
+        System.out.println("The perimeter of the rectangle is: --> \"" + perimeter + "\" <--");
+        System.out.println("Have a great day and see you soon");
     }
 }

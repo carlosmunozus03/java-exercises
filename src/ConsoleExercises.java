@@ -41,8 +41,8 @@ public class ConsoleExercises {
 
         System.out.println("-----------------------------------------");
 
-        //Calculate the perimeter and area of classrooms
-        System.out.println("Now... lets calculate the area and perimeter of a rectangle");
+        //Calculate the perimeter, area and volume of classrooms
+        System.out.println("Now... lets calculate the area, perimeter and volume of a rectangle");
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter a length value");
         double length = Double.parseDouble(sc1.nextLine());
@@ -51,17 +51,24 @@ public class ConsoleExercises {
         System.out.println("Enter a width value");
         double width = Double.parseDouble(sc2.nextLine());
 
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println("Enter a height value");
+        double height = Double.parseDouble(sc3.nextLine());
+
         System.out.println("The length is: --> \"" + length + "\" <--");
         System.out.println("The width is: --> \"" + width + "\" <--");
+        System.out.println("The height is: --> \"" + height + "\" <--");
 
-        //Area and perimeter
+        //Area, perimeter and volume
         double area = length * width;
         double perimeter = 2 * area + 2 * width;
+        double volume = length * width * height;
 
         System.out.println("-----------------------------------------");
-
-        System.out.println("The area of the rectangle is: --> \"" + area + "\" <--");
-        System.out.println("The perimeter of the rectangle is: --> \"" + perimeter + "\" <--");
-        System.out.println("Have a great day and see you soon");
+        // Use printf and %.2f for get 2 decimals
+        System.out.printf("The area of the rectangle is: --> \" %.2f \" <--\"", area);
+        System.out.printf("\nThe perimeter of the rectangle is: --> \" %.2f \" <--\"", perimeter);
+        System.out.printf("\nThe volume of the rectangle is: --> \" %.2f \" <--\"", volume);
+        System.out.println("\nHave a great day and see you soon!");
     }
 }

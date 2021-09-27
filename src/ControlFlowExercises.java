@@ -42,5 +42,58 @@ public class ControlFlowExercises {
                 System.out.println(fb);
             }
         }
+
+        //Powerful table
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number would you like to go up");
+        boolean userContinue = false;
+        do {
+            int userInput = scanner.nextInt();
+            System.out.println("Here is your table!");
+            System.out.println("");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            for (int i = 1; i <= userInput; i++) {
+                System.out.printf("%-7d| %-8d| %-5d%n", i, i * i, i * i * i);
+            }
+            System.out.println("Do you want enter another number? y/n");
+            String userAnswer = scanner.next();
+            if (userAnswer.equalsIgnoreCase("y")) {
+                userContinue = true;
+            } else {
+                System.out.println("Thanks for play with us!");
+                break;
+            }
+        } while (userContinue);
+
+        // Grades and letters
+        Scanner scanner2 = new Scanner(System.in);
+        boolean anotherGrade = false;
+        while (anotherGrade = true) {
+            System.out.println("Enter you qualification as a integer number between 0 and 100");
+            int quantity = scanner2.nextInt();
+            if (quantity >= 0 && quantity <= 59) {
+                System.out.println("Your grade is: \"F\"");
+            } else if (quantity >= 60 && quantity <= 66) {
+                System.out.println("Your grade is: \"D\"");
+            } else if (quantity >= 67 && quantity <= 79) {
+                System.out.println("Your grade is: \"C\"");
+            } else if (quantity >= 80 && quantity <= 87) {
+                System.out.println("Your grade is: \"B\"");
+            } else if (quantity >= 88 && quantity <= 98) {
+                System.out.println("Your grade is: \"A\"");
+            } else if (quantity >= 99 && quantity <= 100) {
+                System.out.println("Your grade is: \"A +\"");
+            }
+            System.out.println("Your qualification is: " + quantity);
+            System.out.println("Do you want enter another grade? y/n");
+            String userChoice = scanner.next();
+            if (userChoice.equalsIgnoreCase("y")) {
+                anotherGrade = true;
+            } else {
+                System.out.println("Have a good one!");
+                break;
+            }
+        }
     }
 }

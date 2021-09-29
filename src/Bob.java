@@ -3,16 +3,22 @@ import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Hi my name is Bob, lets talk about something");
-        String userinfo = scanner.nextLine();
-        if (userinfo.endsWith("?")) {
-            System.out.println("'Sure'");
-        } else if (userinfo.endsWith("!")) {
-            System.out.println("'Whoa, chill out!");
-        } else if (userinfo.equals("")) {
-            System.out.println("'Fine. Be that way!'");
-        } else {
-            System.out.println("'Whatever'");
+        System.out.println("Hi my name is Bob, let's talk about something");
+        System.out.println("To finish just say 'QUIT'");
+        String answer = "";
+        while (!answer.equalsIgnoreCase("quit")) {
+            System.out.println("So... what do you want?");
+            answer = scanner.next();
+            if (answer.isEmpty()) {
+                System.out.println("Fine. Be that way");
+            } else if (answer.endsWith("?")) {
+                System.out.println("Sure...");
+            } else if (answer.endsWith("!")) {
+                System.out.println("Whoa, chill out!");
+            } else {
+                System.out.println("Whatever.");
+            }
         }
+        System.out.println("I'm out of here...");
     }
 }

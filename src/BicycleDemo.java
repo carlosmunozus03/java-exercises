@@ -15,6 +15,5 @@ public class BicycleDemo {
         bike2.speedUp(10);
         bike2.changeGear(3);
         bike2.printStates();
-
     }
 }

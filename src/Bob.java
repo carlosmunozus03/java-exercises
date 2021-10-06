@@ -5,9 +5,9 @@ public class Bob {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hi my name is Bob, let's talk about something");
         System.out.println("To finish just say 'QUIT'");
-        String answer = "";
+        String answer = scanner.next();
         while (!answer.equalsIgnoreCase("quit")) {
-            System.out.println("So... what do you want?");
+            System.out.println("what do you want?");
             answer = scanner.next();
             if (answer.isEmpty()) {
                 System.out.println("Fine. Be that way");

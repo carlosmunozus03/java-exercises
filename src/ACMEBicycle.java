@@ -23,3 +23,8 @@ class ACMEBicycle implements InterfaceBicycle {
         System.out.println("Cadence: " + cadence + " " + "Speed: " + speed + " " + "Gear: " + gear);
     }
 }
+
+// The compiler will now require that methods
+// changeCadence, changeGear, speedUp, and applyBrakes
+// all be implemented. Compilation will fail if those
+// methods are missing from this class.

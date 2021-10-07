@@ -1,3 +1,7 @@
+package oop;
+
+import oop.Bicycle;
+
 public class MountainBike extends Bicycle {
     // example of Inheritance
     // new fields and methods defining

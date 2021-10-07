@@ -1,3 +1,5 @@
+package oop;
+
 public class Bicycle {
     int cadence = 0;
     int speed = 0;

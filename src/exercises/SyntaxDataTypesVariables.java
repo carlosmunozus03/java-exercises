@@ -1,3 +1,5 @@
+package exercises;
+
 //Java Syntax, Data Types, and Variables
 // This is an example of constant variable: "final  int  SIDES_OF_A_DICE  =  6 ;"
 public class SyntaxDataTypesVariables {

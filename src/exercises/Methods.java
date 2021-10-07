@@ -1,3 +1,5 @@
+package exercises;
+
 public class Methods {
     // 1.- Definir metodos
     // 2.- Llamar metodo

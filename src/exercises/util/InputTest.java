@@ -1,4 +1,4 @@
-package Exercises.util;
+package exercises.util;
 
 public class InputTest {
     public static void main(String[] args) {

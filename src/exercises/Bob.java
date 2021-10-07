@@ -1,9 +1,11 @@
+package exercises;
+
 import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Hi my name is Bob, let's talk about something");
+        System.out.println("Hi my name is Exercises.Bob, let's talk about something");
         System.out.println("To finish just say 'QUIT'");
         String answer = scanner.next();
         while (!answer.equalsIgnoreCase("quit")) {

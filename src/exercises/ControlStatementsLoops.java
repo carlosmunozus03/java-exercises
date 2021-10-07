@@ -1,3 +1,5 @@
+package exercises;
+
 public class ControlStatementsLoops {
     public static void main(String[] args) {
 

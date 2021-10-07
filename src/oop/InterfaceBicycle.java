@@ -1,3 +1,5 @@
+package oop;
+
 public interface InterfaceBicycle {
     public void changeCadence(int newValue);
 

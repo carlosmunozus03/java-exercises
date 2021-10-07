@@ -1,3 +1,5 @@
+package exercises;
+
 public class StringExercises {
     public static void main(String[] args) {
         String education = "We don't need no education\n" +

@@ -31,11 +31,11 @@ public class ControlFlowExercises {
 
         System.out.println("-----------------------------------------");
 
-        // FizzBuzz
+        // exercises.FizzBuzz
         System.out.println("Now do the Fizz Buzz problem!");
         for (int fb = 1; fb <= 100; fb++) {
             if (fb % 5 == 0 && fb % 3 == 0) {
-                System.out.println("FizzBuzz");
+                System.out.println("exercises.FizzBuzz");
             } else if (fb % 5 == 0) {
                 System.out.println("Buzz");
             } else if (fb % 3 == 0) {

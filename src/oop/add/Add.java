@@ -1,7 +1,9 @@
 package oop.add;
 
 public class Add {
-    private int first, second, result;
+    private final int first;
+    private final int second;
+    private int result;
 
     public Add(int first, int second) {
         this.first = first;

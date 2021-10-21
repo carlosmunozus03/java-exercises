@@ -9,13 +9,17 @@ public class CarMain {
 //        ferrari.brand = "Ferrari";
 //        ferrari.color = "Red";
 //        ferrari.speed = 5;
-
-        ferrari.start();
         ferrari.off();
+        ferrari.off();
+        ferrari.start();
+        ferrari.move();
+        ferrari.stop();
+        ferrari.off();
+        ferrari.stop();
 
 //        System.out.println("Price of car is: USD$ " + ferrari.price);
 //        System.out.println("Max speed is: " + ferrari.speed + " km/hr");
-
+        System.out.println("-------------");
         //Using this in method
         ferrari.move();
         lamborghini.move();

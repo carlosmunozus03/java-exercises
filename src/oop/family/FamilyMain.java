@@ -8,6 +8,7 @@ public class FamilyMain {
 
         dad.walk();
         son.walk();
-        daughter.eat();
+        daughter.sayHello();
+
     }
 }

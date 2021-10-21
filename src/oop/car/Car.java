@@ -7,7 +7,7 @@ public class Car {
     int speed;
     int price;
 
-    // true = start
+    //true = start
     //false = off
     boolean state = false;
 
@@ -22,33 +22,37 @@ public class Car {
 
     //Methods
     void start() {
-        if (state) {
-            System.out.println("The " + this.brand + " is off");
+        if (!state) {
+            System.out.println("The " + this.brand + " it has turned on");
             state = true;
         } else {
-            System.out.println("The " + this.brand + " is on");
+            System.out.println("The " + this.brand + " it's already on");
         }
     }
 
     void off() {
-        if (!state) {
-            System.out.println(this.brand + " is on");
+        if (state) {
+            System.out.println(this.brand + " It has been turned off");
             state = false;
         } else {
-            System.out.println(this.brand + " is off");
+            System.out.println(this.brand + " it's already off");
         }
     }
 
     void move() {
 //        System.out.println("The " + this.brand + " can moving at " + this.speed + " km/hr");
-        if (!state){
+        if (state) {
             System.out.println(this.brand + " is moving");
-        } else{
-            System.out.println(this.brand+ " should to be on for move");
+        } else {
+            System.out.println(this.brand + " should to be on for move");
         }
     }
 
     void stop() {
-        System.out.println("The " + this.brand + " is stopping until 0 km/hr");
+        if (state) {
+            System.out.println(this.brand + " is stopping");
+        } else {
+            System.out.println(this.brand + " should to be 'start' and in movement for stop");
+        }
     }
 }

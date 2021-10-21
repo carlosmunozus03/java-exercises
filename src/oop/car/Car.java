@@ -2,10 +2,10 @@ package oop.car;
 
 public class Car {
     //Attributes
-    String color;
-    String brand;
-    int speed;
-    int price;
+    private String color;
+    private String brand;
+    private int speed;
+    private int price;
 
     //true = start
     //false = off
@@ -21,7 +21,7 @@ public class Car {
     }
 
     //Methods
-    void start() {
+    private void start() {
         if (!state) {
             System.out.println("The " + this.brand + " it has turned on");
             state = true;
@@ -40,9 +40,10 @@ public class Car {
     }
 
     void move() {
+        start();
 //        System.out.println("The " + this.brand + " can moving at " + this.speed + " km/hr");
         if (state) {
-            System.out.println(this.brand + " is moving");
+            System.out.println(this.brand + " is moving at " + this.speed + " km/hr");
         } else {
             System.out.println(this.brand + " should to be on for move");
         }
@@ -54,5 +55,48 @@ public class Car {
         } else {
             System.out.println(this.brand + " should to be 'start' and in movement for stop");
         }
+    }
+
+    //Setter and Getter when the attributes are private (encapsulation)
+
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public boolean isState() {
+        return state;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
     }
 }

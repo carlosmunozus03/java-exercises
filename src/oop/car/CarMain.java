@@ -9,9 +9,10 @@ public class CarMain {
 //        ferrari.brand = "Ferrari";
 //        ferrari.color = "Red";
 //        ferrari.speed = 5;
+//        ferrari.speed = 400;
         ferrari.off();
         ferrari.off();
-        ferrari.start();
+//        ferrari.start();
         ferrari.move();
         ferrari.stop();
         ferrari.off();
@@ -20,9 +21,11 @@ public class CarMain {
 //        System.out.println("Price of car is: USD$ " + ferrari.price);
 //        System.out.println("Max speed is: " + ferrari.speed + " km/hr");
         System.out.println("-------------");
+
         //Using this in method
-        ferrari.move();
+        lamborghini.setSpeed(500);
         lamborghini.move();
+//        System.out.println(lamborghini.getSpeed());
 
     }
 }

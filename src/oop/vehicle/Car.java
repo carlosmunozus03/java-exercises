@@ -9,4 +9,10 @@ public class Car extends Vehicle {
         this.speed = speed;
         this.price = price;
     }
+
+//add the annotation for to be specific
+    @Override
+    void stop() {
+        System.out.println("The " + this.model + " is stopping");
+    }
 }

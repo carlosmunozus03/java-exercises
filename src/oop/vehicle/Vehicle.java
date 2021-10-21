@@ -8,6 +8,9 @@ public class Vehicle {
     int price;
     int speed;
     int wheels;
+
+    //turnOn = true
+    //turnOff = false
     boolean status = false;
 
     //Methods
@@ -39,11 +42,16 @@ public class Vehicle {
     }
 
     void stop() {
-        if (status) {
-            System.out.println(this.model + " is stopping");
-        } else {
-            System.out.println(this.model + " should to be turn on for stop");
-        }
+        System.out.println("The vehicle is stopping");
     }
 
+    // overcharge methods
+
+    void stop(int speed) {
+        System.out.println("The " + this.model + " has reduced its speed from " + speed + " to 0 km");
+    }
+
+    void stop(int speed, String street) {
+        System.out.println("The " + this.model + " has reduced its speed from " + speed + " to 0 km in the street " + street);
+    }
 }

@@ -9,5 +9,7 @@ public class CustomerMain {
         customer1.placeOrders();
         customer2.sendProduct();
         customer3.sendPayment();
+
+        customer1.setFirstName("Andres");
     }
 }

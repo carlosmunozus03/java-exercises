@@ -16,3 +16,16 @@ for (let i = 1; i <= 15; i++) {
         console.log("Number is: " + i)
     }
 }
+
+
+// callback function
+
+function hello() {
+    console.log("Hello! im a function! im a callback!");
+}
+
+function sayHello(fn) {
+    fn();
+}
+
+sayHello(hello);

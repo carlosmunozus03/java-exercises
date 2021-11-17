@@ -13,17 +13,20 @@
     <script src="https://kit.fontawesome.com/d0d640b552.js" crossorigin="anonymous"></script>
     <title>Bootstrap</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .row {
             background-color: #bde8bd;
-            min-height: 10em;
+            min-height: 5em;
             margin-top: 1em;
         }
 
         .col {
             background-color: #269626;
-            border-top: 1px solid black;
+            border: 1px solid black;
             text-align: center;
-            padding: .75em .15em;
         }
     </style>
 </head>
@@ -41,7 +44,7 @@
     </div>
     <br>
     <p class="text-center">Vertical Alignment System</p>
-    <div class="row justify-content-between">
+    <div class="row p-3 justify-content-between">
         <ul class="col-3">
             <p>Parents</p>
             <li>align-items-start</li>
@@ -79,7 +82,7 @@
     </div>
     <br>
     <p class="text-center">Horizontal Alignment System</p>
-    <div class="row justify-content-between">
+    <div class="row p-3 justify-content-between">
         <ul class="col-3">
             <li>justify-content-start</li>
             <li>justify-content-center</li>
@@ -116,6 +119,24 @@
         <div class="col col-3">Column</div>
         <div class="col col-3">Column</div>
         <div class="col col-3">Column</div>
+    </div>
+    <br>
+    <p class="text-center">Column Nesting</p>
+
+    <!--.row*1>.col*2-->
+    <div class="row">
+        <div class="col col-md-8">Principal Column 1 (8)
+            <div class="row">
+                <div class="col col-md-8">Secondary Column 1 (8)</div>
+                <div class="col col-md-4">Secondary Column 2 (4)</div>
+            </div>
+        </div>
+        <div class="col col-md-4">Principal Column 2 (4)
+            <div class="row">
+                <div class="col col-md-6">Secondary Column 1 (6)</div>
+                <div class="col col-md-6">Secondary Column 2 (6)</div>
+            </div>
+        </div>
     </div>
     <br>
 </div>
